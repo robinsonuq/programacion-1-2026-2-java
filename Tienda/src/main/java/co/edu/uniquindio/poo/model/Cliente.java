@@ -16,14 +16,15 @@ public class Cliente {
 
     public Cliente(String documentoIdentidad, String nombreCompleto,
                    Tienda ownedByTienda, String telefono,
-                   String correo, String ciudadResidencia, List<Factura> listaFacturas) {
+                   String correo, String ciudadResidencia) {
+
         this.documentoIdentidad = documentoIdentidad;
         this.nombreCompleto = nombreCompleto;
         this.ownedByTienda = ownedByTienda;
         this.telefono = telefono;
         this.correo = correo;
         this.ciudadResidencia = ciudadResidencia;
-        this.listaFacturas = listaFacturas;
+        this.listaFacturas = new ArrayList<>();
     }
 
     public String getDocumentoIdentidad() {

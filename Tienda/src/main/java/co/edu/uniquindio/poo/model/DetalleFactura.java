@@ -29,4 +29,8 @@ public class DetalleFactura {
     public Factura getOwndByFactura() {
         return owndByFactura;
     }
+
+    public float calcularSubTotal(){
+        return (float) (cantidadComprada * getProducto().getValor());
+    }
 }
