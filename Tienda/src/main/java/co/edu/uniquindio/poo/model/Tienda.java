@@ -125,6 +125,34 @@ public class Tienda {
 
     //CRUD Cliente, Factura , Producto
 
+    //1. Obtener los productos con una cantidad disponible mayor igual a 10
+
+    public .....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
