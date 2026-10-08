@@ -13,7 +13,7 @@ public class Tienda {
 
     private final ArrayList<Cliente> listaClientes = new ArrayList<>();
     private final List<Factura> listaFacturas = new LinkedList<>();
-    private Map<String,Producto> listaProductos = new HashMap<>();
+    private Map<String,Producto> hashMaplistaProductos = new HashMap<>();
 
 
     public Tienda(String nombre, String nit,String telefono){
@@ -125,14 +125,42 @@ public class Tienda {
 
     //CRUD Cliente, Factura , Producto
 
-    //1. Obtener los productos con una cantidad disponible mayor igual a 10
+    //1. Obtener la lista de los productos con una cantidad disponible mayor igual a 10
 
-    public .....
+    public List<Producto> obtenerMayoresDiez() {
+        List<Producto> productosAdecuado = new ArrayList<>();
+
+        for (Producto productosBuenos : hashMaplistaProductos.values()) {
+            if (productosBuenos.getCantidadDisponible() >= 10) {
+                productosAdecuado.add(productosBuenos);
+            }
+        }
+        return productosAdecuado;
+    }
+     //2. Obtener la lista de codigos de los productos con una cantidad disponible mayor igual a 10 y menor que 50
+
+    public ArrayList<String> obtenerCodigosProductosAgotados(int limiteInferior, int limiteSuperior){
+        ArrayList<String> resultado = new ArrayList<>();
+        for(String codigo : hashMaplistaProductos.keySet()){
+            Producto producto = hashMaplistaProductos.get(codigo);
+            if(producto.getCantidadDisponible() >= 10 && producto.getCantidadDisponible() < 50 ){
+                resultado.add(codigo);
+            }
+        }
+        return resultado;
+    }
+    public ArrayList<String> obtenerCodigosProductosAgotados2(int limiteInferior, int limiteSuperior){
+        ArrayList<String> resultado = new ArrayList<>();
+        for (Producto productoAux : hashMaplistaProductos.values()) {
+            if (productoAux.getCantidadDisponible() >= 10 && productoAux.getCantidadDisponible() < 50) {
+                resultado.add(productoAux.getCodigo());
+            }
+        }
+        return resultado;
+    }
 
 
-     //2. Obtener los productos con una cantidad disponible mayor igual a 10
 
-sss
 
 
 
