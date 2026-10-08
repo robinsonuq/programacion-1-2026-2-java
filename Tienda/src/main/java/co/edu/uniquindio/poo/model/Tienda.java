@@ -132,8 +132,7 @@ public class Tienda {
 
      //2. Obtener los productos con una cantidad disponible mayor igual a 10
 
-sdsdfsadadADasASA
-
+sss
 
 
 
