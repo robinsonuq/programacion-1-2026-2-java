@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.model;
 
+import java.time.LocalDate;
 import java.util.*;
 
 /**
@@ -158,6 +159,40 @@ public class Tienda {
         }
         return resultado;
     }
+
+//2. Obtener la lista de clientes que hayan comprado el 07 de octubre de 2026
+
+    public ArrayList<Cliente> obtenerClientesCompras(){
+        ArrayList<Cliente> listaClientes = new ArrayList<>();
+        LocalDate fechaConsulta = LocalDate.of(2026,10,7);
+        for (Factura factura : listaFacturas){
+            if(factura.fecha().isEqual(fechaConsulta)){
+                listaClientes.add(factura.cliente());
+            }
+        }
+        return listaClientes;
+    }
+
+    public ArrayList<Cliente> obtenerClientesCompras2(LocalDate fechaConsulta){
+        ArrayList<Cliente> listaClientes = new ArrayList<>();
+        for (Factura factura : listaFacturas){
+            if(factura.fecha().isEqual(fechaConsulta)){
+                listaClientes.add(factura.cliente());
+            }
+        }
+        return listaClientes;
+    }
+
+    public ArrayList<Cliente> obtenerClientesCompras3(LocalDate fechaConsulta){
+        ArrayList<Cliente> listaClientes = new ArrayList<>();
+        for(Cliente clienteAux : listaClientes){
+            if(clienteAux.isCompraEnFecha(fechaConsulta) == true){
+                listaClientes.add(clienteAux);
+            }
+        }
+        return listaClientes;
+    }
+
 
 
 
