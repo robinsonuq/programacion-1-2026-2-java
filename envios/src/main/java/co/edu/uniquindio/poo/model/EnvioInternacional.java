@@ -6,9 +6,8 @@ public class EnvioInternacional extends Envio{
     private boolean seguro;
     private final double COSTO_FIJO = 15_000;
 
-    public EnvioInternacional(String codigo, float peso, float incremento, String destinatario,
-                              EmpresaEnvios ownedByEmpresa, String paiseDestino, boolean seguro) {
-        super(codigo, peso, incremento, destinatario, ownedByEmpresa);
+    public EnvioInternacional(float valorFijo, String codigo, float peso, float incremento, String destinatario, EmpresaEnvios ownedByEmpresa, String paiseDestino, boolean seguro) {
+        super(valorFijo, codigo, peso, incremento, destinatario, ownedByEmpresa);
         this.paiseDestino = paiseDestino;
         this.seguro = seguro;
     }

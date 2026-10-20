@@ -11,10 +11,17 @@ public class Main {
 
         EmpresaEnvios empresaEnvios = new EmpresaEnvios("Envios UQ");
 
-        EnvioNacional envioNacional1 = new EnvioNacional("001",30,
-                3000,"Juan",empresaEnvios,"Pereira",true);
+        //etapas en el software - ciclo de vida del software
+        // requerimentos -ingeniero de sistemas
+        // analisis -pensamiento computacional
+        // diseño   -artefacto -diagramas de clase (datos- informacion del negocio)
+        // implementacion- lenguajes y herramientas-librerias
+        // pruebas - de mucho tipos    TDD-  Desarrollo de sosftwrae dirigido por pruebas
+        // despliegue -arquitectura
+        // seguridad
+        // datos
 
-        envioNacional1.calcularCostoTotal();
+
 
     }
 }

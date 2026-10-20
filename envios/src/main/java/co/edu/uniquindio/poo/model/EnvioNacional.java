@@ -6,9 +6,8 @@ public class EnvioNacional extends Envio{
     private boolean domicilio;
     private final double COSTO_FIJO = 6000;
 
-    public EnvioNacional(String codigo, float peso, float incremento, String destinatario,
-                         EmpresaEnvios ownedByEmpresa, String ciudadDestino, boolean domicilio) {
-        super(codigo, peso, incremento, destinatario, ownedByEmpresa);
+    public EnvioNacional(float valorFijo, String codigo, float peso, float incremento, String destinatario, EmpresaEnvios ownedByEmpresa, String ciudadDestino, boolean domicilio) {
+        super(valorFijo, codigo, peso, incremento, destinatario, ownedByEmpresa);
         this.ciudadDestino = ciudadDestino;
         this.domicilio = domicilio;
     }
@@ -25,6 +24,8 @@ public class EnvioNacional extends Envio{
     public void setDomicilio(boolean domicilio) {
         this.domicilio = domicilio;
     }
+
+
     @Override
     public double calcularCostoTotal() {
         double costo = calcularCostoFijo();
