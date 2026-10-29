@@ -18,7 +18,6 @@ public abstract class Envio {
         this.ownedByEmpresa = ownedByEmpresa;
         this.incremento = incremento;
         this.valorFijo = valorFijo;
-
     }
 
     public String getCodigo() {

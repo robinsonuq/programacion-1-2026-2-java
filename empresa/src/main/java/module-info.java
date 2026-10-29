@@ -1,0 +1,15 @@
+module co.edu.uniquindio.poo.empresa {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    requires org.controlsfx.controls;
+    requires com.dlsc.formsfx;
+    opens co.edu.uniquindio.poo.empresa to javafx.fxml;
+
+    exports co.edu.uniquindio.poo.empresa.model;
+    exports co.edu.uniquindio.poo.empresa.app;
+    exports co.edu.uniquindio.poo.empresa.viewcontrollers;
+
+    opens co.edu.uniquindio.poo.empresa.viewcontrollers to javafx.fxml;
+
+}
