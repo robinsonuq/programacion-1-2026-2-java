@@ -11,7 +11,43 @@
 	(object Attribute
 	    tool       	"Java"
 	    name       	"IDE"
-	    value      	"Internal Editor"))
+	    value      	"Internal Editor")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply1"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply2"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagName3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagText3"
+	    value      	"")
+	(object Attribute
+	    tool       	"Java"
+	    name       	"UserDefineTagApply3"
+	    value      	""))
     quid       	"51D3AFD2037B"
     enforceClosureAutoLoad 	FALSE
     defaults   	(object defaults
@@ -69,7 +105,7 @@
 				supplier   	"InicioSesionView"
 				quidu      	"51D3AFF40148"
 				messages   	(list Messages
-				    (object Message "ingresarUsuario(user,password)"
+				    (object Message "ingresarUsuario(user,password)/boton"
 					quid       	"51D3B0100263"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -495,7 +531,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	TRUE))
-		    (object InterMessView "ingresarUsuario(user,password)" @22
+		    (object InterMessView "ingresarUsuario(user,password)/boton" @22
 			location   	(0, 440)
 			font       	(object Font
 			    size       	10
@@ -521,9 +557,9 @@
 			    quidu      	"51D3B0100263"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	638
+			    max_width  	718
 			    justify    	0
-			    label      	"ingresarUsuario(user,password)"
+			    label      	"ingresarUsuario(user,password)/boton"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
